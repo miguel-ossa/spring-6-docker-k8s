@@ -138,7 +138,7 @@ Create images
 Run everything together
 ```shell
 docker stop auth-server mysql rest-mvc reactive gateway mongo reactive-mongo
-docker rm auth-server mysql reactive gateway mongo reactive-mongo
+docker rm auth-server mysql rest-mvc reactive gateway mongo reactive-mongo
 
 docker run -d -p 9000:9000 --name auth-server docker.io/library/spring-6-auth-server:0.0.1-SNAPSHOT
 
